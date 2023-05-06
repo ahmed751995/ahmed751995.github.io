@@ -1,13 +1,20 @@
 .selected {
-  background-color: white !important;
+  background: #ffffff52 !important;
   a {
-    color: var(--secondary-color) !important;
+    color: white !important;
   }
 
   @media (min-width: 768px) {
-    background: transparent !important;
+    background: #ffffff52 !important;
     a {
       color: white !important;
     }
+  }
+}
+
+.active {
+  background-color: #ffffff38;
+  border-radius: 6px;
+  @media (min-width: 768px) {
   }
 }

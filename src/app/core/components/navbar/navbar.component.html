@@ -1,61 +1,38 @@
-<nav class="bg-secondary text-white rounded-md md:rounded-none md:px-5">
+<nav class="bg-darkred">
   <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a routerLink="/" class="flex items-center font-bold text-lg md:text-xl lg:text-2xl">
-      A.M Abdulrahman
+    <a href="https://flowbite.com/" class="flex items-center">
+      <span
+        class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+        ><span class="text-black">A.M</span> Abdulrahman</span
+      >
     </a>
-    <button
-      (click)="toggleNav()"
-      type="button"
-      class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg md:hidden hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-gray-200"
-      aria-controls="navbar-default"
-      aria-expanded="false">
-      <span class="sr-only">Open main menu</span>
-      <svg
-        class="w-6 h-6"
-        aria-hidden="true"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          fill-rule="evenodd"
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-          clip-rule="evenodd"></path>
-      </svg>
+    <button mat-icon-button (click)="toggleNav()" class="md:hidden">
+      <mat-icon class="text-white align-top">menu</mat-icon>
     </button>
+
     <div
       [ngClass]="{ hidden: !showNav }"
       class="w-full md:block md:w-auto"
       id="navbar-default">
       <ul
-        class="font-medium text-lg md:text-xl lg:text-2xl flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
-        <li routerLinkActive="selected" class="rounded-md">
+        class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-6 md:mt-0 md:border-0">
+        <li routerLinkActive="active" class="py-1 px-3">
           <a
             routerLink="/"
-            class="block py-2 pl-3 pr-4 text-gray-100 rounded md:p-0 hover:bg-gray-200 hover:text-secondary md:hover:bg-transparent md:hover:text-white"
+            class="block text-white rounded"
             aria-current="page">
             Home
           </a>
         </li>
-        <li>
+        <li
+          routerLinkActive="active"
+          class="py-1 px-3 hover:bg-[#ffffff38] rounded-md">
           <a
-            routerLink="/profile"
-            class="block py-2 pl-3 pr-4 text-gray-100 rounded md:hover:text-white md:p-0 hover:bg-gray-200 hover:text-secondary md:hover:bg-transparent md:hover:text-white">
-            Profile
-          </a>
-        </li>
-                <li>
-          <a
-            routerLink="/blog"
-            class="block py-2 pl-3 pr-4 text-gray-100 rounded md:hover:text-white md:p-0 hover:bg-gray-200 hover:text-secondary md:hover:bg-transparent md:hover:text-white">
-            Blog
-          </a>
-                </li>
-                        <li>
-          <a
-            routerLink="/cv"
-            class="block py-2 pl-3 pr-4 text-gray-100 rounded md:hover:text-white md:p-0 hover:bg-gray-200 hover:text-secondary md:hover:bg-transparent md:hover:text-white">
-            CV
+            routerLink="/about"
+            class="block text-white rounded"
+            aria-current="page">
+            About
           </a>
         </li>
       </ul>

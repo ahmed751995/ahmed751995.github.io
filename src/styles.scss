@@ -44,8 +44,7 @@ $mywebsite-frontend-theme: mat.define-light-theme(
 @tailwind utilities;
 
 :root {
-  --primary-color: #000000;
-  --secondary-color: #7a000b;
+  --darkred: #8b0000;
 }
 
 html,
@@ -55,5 +54,5 @@ body {
 body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
-  background-color: rgb(255 251 235);
+  background-color: #F5F6F8;
 }

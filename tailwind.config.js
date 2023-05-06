@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: 'var(--primary-color)',
-        secondary: 'var(--secondary-color)'
+        darkred: 'var(--darkred)',
       }
     },
   },
   plugins: [],
+  important: true,
 };
