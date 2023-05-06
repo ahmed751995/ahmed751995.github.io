@@ -2,10 +2,10 @@ name: development pipeline
 on:
   push:
     branches:
-      - dev
+      - development
 
 jobs:
-  hello_world_job:
+  setup_job:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
