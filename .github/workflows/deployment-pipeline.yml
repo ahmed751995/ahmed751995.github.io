@@ -20,10 +20,13 @@ jobs:
       - name: linting
         run: npm run lint
 
-      - name: deploying
-        uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4.0
-        with:
-          github_access_token: ${{secrets.GH_PAGES}}
-          base_href: https://ahmed751995.github.io
-          deploy_branch: gh-pages
-          angular_dist_build_folder: dist
+      # - name: deploying
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{secrets.GH_PAGES}}
+      - name: Deploy to github pages
+        env:
+          GITHUB_TOKEN: ${{secrets.GH_PAGES}}
+        run: git config --global user.name "Ahmed Abdulrahman"
+        run: git config --global user.email "ahmed751995@gmail.com"
+        run: npm run deploy
