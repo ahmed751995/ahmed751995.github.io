@@ -22,5 +22,3 @@ jobs:
 
       - name: deploying
         run: npm run deploy
-        with:
-          github_token: ${{secrets.GH_PAGES}}
