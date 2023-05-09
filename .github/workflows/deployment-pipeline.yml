@@ -21,4 +21,9 @@ jobs:
         run: npm run lint
 
       - name: deploying
-        run: npm run deploy
+        uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4.0
+        with:
+          github_access_token: ${{secrets.GH_PAGES}}
+          base_href: https://ahmed751995.github.io
+          deploy_branch: gh-pages
+          angular_dist_build_folder: dist
