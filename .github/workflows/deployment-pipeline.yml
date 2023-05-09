@@ -19,3 +19,8 @@ jobs:
 
       - name: linting
         run: npm run lint
+
+      - name: deploying
+        run: npm run deploy
+        with:
+          github_token: ${{secrets.GH_PAGES}}
