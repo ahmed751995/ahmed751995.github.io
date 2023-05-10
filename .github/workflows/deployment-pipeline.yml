@@ -20,10 +20,7 @@ jobs:
       - name: linting
         run: npm run lint
 
-      # - name: deploying
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{secrets.GH_PAGES}}
+
       - name: Deploy to github pages
         env:
           GITHUB_TOKEN: ${{secrets.GH_PAGES}}
