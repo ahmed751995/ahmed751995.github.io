@@ -19,9 +19,3 @@ jobs:
 
       - name: linting
         run: npm run lint
-
-
-      - name: Deploy to github pages
-        env:
-          GITHUB_TOKEN: ${{secrets.GH_PAGES}}
-        run: git config --global user.name "Ahmed Abdulrahman" && git config --global user.email "ahmed751995@gmail.com" && npm run deploy

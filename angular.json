@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mywebsite-frontend": {
+    "ahmed751995.github.io": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mywebsite-frontend",
+            "outputPath": "dist/ahmed751995.github.io",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mywebsite-frontend:build:production"
+              "browserTarget": "ahmed751995.github.io:build:production"
             },
             "development": {
-              "browserTarget": "mywebsite-frontend:build:development"
+              "browserTarget": "ahmed751995.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mywebsite-frontend:build"
+            "browserTarget": "ahmed751995.github.io:build"
           }
         },
         "test": {
