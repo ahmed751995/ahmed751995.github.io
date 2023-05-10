@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "deploy": "ng deploy --base-href=https://ahmed751995.github.io"
+    "deploy": "ng deploy --repo=https://github.com/ahmed751995/ahmed751995.github.io.git --name=ahmed751995 --email=ahmed751995@gmail.com"
   },
   "private": true,
   "dependencies": {
